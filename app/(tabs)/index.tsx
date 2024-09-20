@@ -14,10 +14,12 @@ export default function HomeScreen() {
   const [counter, setCounter] = useState(0);
 
 
-
-
   return (
     <View style={{ backgroundColor: "blue", flex: 1 }}>
+
+      <View style={{ backgroundColor: "pink", flex: 1 }}>
+        <Image source={require('../assets/images/bild.jpeg')} />
+      </View>
 
 
       <View style={{ backgroundColor: "white", height: 150, flexDirection: "row" }}>
@@ -62,6 +64,7 @@ export default function HomeScreen() {
         <View style={{ backgroundColor: "#f194ff", borderRadius: 5 }}>
           <Button title="Återställ" onPress={() => {
             setCounter(0);
+            setFruit("Fruktsallad");
           }} />
         </View>
 
